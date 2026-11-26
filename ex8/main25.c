@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int main() {
@@ -7,10 +6,9 @@ int main() {
 
     ip = &var;
 
-    printf("Address of var: %p\n", (void*)&var);
-    printf("Value of ip: %p\n", (void*)ip);
-    printf("Address of ip: %p\n", (void*)&ip);
+    printf("Address of var: %p\n", &var);
+    printf("Value of ip: %p\n", ip);
+    printf("Address of ip: %p\n", &ip);
     printf("Value of *ip: %d\n", *ip);
-
     return 0;
 }
